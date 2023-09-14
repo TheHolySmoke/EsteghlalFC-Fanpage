@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="bk" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title> About | Esteghlal FC</title>
+        <meta name="Esteghlal FC" content="get familiar to the best club in Iran">
+        <link rel="stylesheet" href="style/styles.css" />
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav"> 
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>           
+                    <li><a href="trophies.html">Trophies</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+
+            </nav>                
+
+            <h1 class="club-name club-name-header">Esteghlal FC</h1>
+        </header>
+        <section class="content-section container">
+            <h2 class="section-header">Contact us About me</h2>
+            <p>Hello,my name is Reza Ahmadi. I am currently a computer science student at Elte university in Budapest, I was born in Tehran-Iran and lived there for 18 years and I alse love programming :)</p>
+            <p>You can contact me through Email Telegram WhatsApp and Instagram!
+                Please contact me and write your suggestions and opinions through this form as well!</p>
+        </section>
+
+
+        <aside>
+            <form action="mailto:rezakhadem10@yahoo.com" method="post" enctype="text/plain" class="form-section">
+                <fieldset class="field-section">
+                    <legend>Write me your suggestion and comments about the site and tell me your favorite football club in your home country</legend>
+
+                    <label for="name">User Name:</label><br>     <!-- FOR -> TO LINK THE LABLE TO THE INPUT SECTOR-->
+                    <input type="text" name="username" id="name" size="60" ><br>
+                    
+
+
+                    <label for="fft">Favorite football team:</label><br>
+                    <input type="text" name="fft" id="fft" size="60" placeholder="Esteghlal Fc"><br>
+
+                    <label for="comment">Comment</label><br>
+                    <textarea cols="60" rows="10" name="comment" id="comment" placeholder="Write your comment in this section..."></textarea><br>
+                    
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" name="email" id="email" size="60" placeholder="E-mail address..."><br>
+                    <input type="checkbox" name="nwd" id="nwd" value="true">
+                    <label for="nwd">I want to recive Reza's new webdesigns!</label>
+                </fieldset>
+
+                <fieldset class="field-section">
+                    <legend>Rate the WebSite!</legend>
+                    <p>Please rate the website on a scale of 1 to 5!</p>
+                    <input type="radio" name="raiting" id="s1" value="1">
+                    <label for="s1">1</label>
+                    <input type="radio" name="raiting" id="s2" value="2">
+                    <label for="s2">2</label>
+                    <input type="radio" name="raiting" id="s3" value="3">
+                    <label for="s3">3</label>
+                    <input type="radio" name="raiting" id="s4" value="4">
+                    <label for="s4">4</label>
+                    <input type="radio" name="raiting" id="s5" value="5">
+                    <label for="s5">5</label>
+                </fieldset>
+
+                <fieldset class="field-section">
+                    <legend>Submit Data</legend>
+                    <input type="Submit" value="Submit">
+                    <input type="Reset" value="Reset">
+                </fieldset>
+            </form>
+        </aside>
+
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="club-name"> Esteghlal FC </h3>
+                <p>Esteghlal fc social medias!</p>
+                <p>check them out!</p>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.instagram.com/esteghlal.fc.official/?hl=en" target="_blank">
+                            <img src="media/instagram.png">
+                        </a>
+                    </li>
+                        
+                    <li>
+                        <a href="https://t.me/EsteghlalfcTelegram" target="_blank">
+                            <img src="media/telegram-logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC3KFdYbquVmB68GjOpOGbKA" target="_blank">
+                            <img src="media/youtube-logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fcesteghlaliran?s=21" target="_blank">
+                            <img src="media/twitter-logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.fcesteghlal.ir/" target="_blank" >
+                            <img src="media/world-wide-web.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#top" onclick="totop()">Back To Top</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function totop(){
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+    </script>
+</html>

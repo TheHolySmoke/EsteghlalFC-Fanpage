@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+
+* {
+    box-sizing: border-box ;        /*so in fut if we resize any thing the padding defiened in other classes take into the acount too*/
+    font-family : Nunito;
+}
+
+html ,body{ 
+    margin: 0;                      /*OVERWRITE DEF PADDING OF THESE ELEMS*/
+    padding: 0;
+
+}
+
+.bk{
+    background-image: url('media/bg.jpg');
+    background-size: contain;
+}
+
+.nav ul{
+    margin: 0;                      /*TOPLEFT RIGHT BOTTOM SPACE*/
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;          /*SIM TO INLINE BUT HIGHT ADJUSTMENT TOO*/
+    padding: .9em;
+    color: white;
+    text-decoration: none ;         /*REMOVE THE UNDERLINE*/
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom:  2px solid gray;
+}
+
+.main-nav li{
+    padding: 0 2%;
+}
+
+.nav a:hover{                       /*SETTING WHEN HOVERD BY MOUSE*/
+    background-color: rgba(255, 255, 255, 0.514);
+    color: black;
+    font-weight: 700;
+}
+.main-header{
+    background-color: hsla(231, 30%, 42%, 0.5);
+    background-image: url("media/head.jpg");
+    background-blend-mode: multiply; /*BLEND THEM TOGETHER*/
+    background-size: auto ;         /*EXPAND AS BIG AS IT CAN*/
+    padding-bottom: 80px ;
+}
+
+.club-name {
+    text-align: center;
+    margin : 1em;
+    font-size: 1.5em;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: normal;             /*CUZ H1 IS BOLD BY DEF*/
+    color:#ffc400;
+    text-shadow: 0px 0px 7px white;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+    
+}
+
+.club-name-header {
+    font-size: 5em;
+}
+
+.content-section{
+    margin: 50px;
+
+}
+
+.container {
+    margin: 0 90px ;                 /*LEFT & RIGTH MARGIN WILL BE AUTO SO CENTER*/
+    margin-top: 100px;
+    margin-bottom: 60px;
+    padding: 5em 2em;               /*LEFT & RIGHT DEFUALT SPACE*/
+    background-color: rgba(240, 255, 255, 0.904);
+    height: auto;
+    padding: 2em;
+    border-radius: 2%;
+}
+
+.container p{
+    margin-top: 3em;
+    margin-right: 28em;
+    border: 1px #000000;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.bottomp{
+    margin-bottom: 5em;
+}
+
+.section-header{
+    font-weight: bold;
+    width: 500px;
+    padding: 10px 0px;
+    margin:0em;
+    margin-right: 0%;
+    color: rgba(5, 12, 109, 0.822);
+    text-align: left;
+    font-size: 2.5em;
+}
+
+.taj-image{ 
+
+    float: right;
+    height: 235px;
+    width:400px;
+
+    border-radius: 5%;
+    margin: 0%;
+
+}
+
+
+
+.mainvideo{
+    margin: 4em auto;
+    max-width: 1080px;
+    min-width: 720px;
+    box-shadow: 0 0 70px black;
+    display: flex;
+}
+
+.main-footer{
+    background-image: url("media/foot.jpg");
+    background-size: contain;
+    /*background-color:rgba(0, 0, 255, 0.836);*/
+    color:white;
+    padding: .25em 0;
+
+}
+
+.main-footer-container{
+    display:contents;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li{
+    padding: 0 .8em;
+}
+
+.footer-nav img{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 25%;
+    background-color: rgba(255, 255, 255, 0.568);
+    background-blend-mode:overlay ;
+   
+}
+
+.main-footer-container p{
+    text-align: center;
+    margin : 0;
+    font-size: 1em;
+    font-family:Nunito;
+    font-weight: 600;
+}
+
+.gallery-item{
+    margin: 30px;
+
+}
+
+.gallery-item-title{
+    display: block;
+     width: 100%;
+     text-align: center;
+     font-weight: bold;
+     font-size: 1em;
+     color: #333;
+     margin-bottom: 5px;
+}
+
+.gallery-item-image{
+    background-color: #000000;
+    background-size: cover;
+    max-height: 415px;
+    max-width: 700px;
+    padding: 0 100px;
+    border-radius: 3%;
+}
+
+.gallery-item-discription{
+    display: block;
+    text-align: center;
+    padding-top: 0;
+}
+
+.gallery-items{
+    display: flex;                   /*PUT THEM IN ONE LINE */           
+    flex-wrap: wrap;                 /*WRAP THEM TO AVOID BIG ONE LINE*/
+    justify-content: space-around;   /*GRIDING ITEMS*/
+}
+
+.gallery-section-headers{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color: rgba(5, 12, 109, 0.822);
+    font-size: 2.5em;
+}
+
+.table-section{
+    margin: auto;
+    width:fit-content;
+    height: fit-content;
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+    
+}
+
+.table{
+    width: 100%;
+
+    padding: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+.table-caption{
+    color: azure;
+    background-color:rgba(0, 0, 0, 0.74);
+}
+
+.table-header{
+    
+    font-size:40px;
+    background-color: rgba(45, 97, 145, 0.904);
+    color: aliceblue;
+}
+
+.table-row{
+    font-size: 20px;
+    background-color:rgba(0, 0, 0, 0.74);
+    text-align: center;
+    color: aliceblue;
+}
+
+.h-elem{
+    padding: 0.5em;
+}
+
+.i-elem{
+    padding: 1em;
+
+}
+
+.form-section{
+    background-color: rgba(240, 255, 255, 0.87);
+    border-radius: 1%;
+    margin: 5em;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 1em;
+    display:grid;
+
+    justify-content: center;
+}
+
+.field-section{
+    margin-top: 1em;
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
+
+    html ,body{ 
+        margin: 0;                      /*OVERWRITE DEF PADDING OF THESE ELEMS*/
+        padding: 0;
+        width: fit-content;
+    }
+    .main-nav {
+        text-align: center;
+        font-size: 2em;
+        border-bottom:  2px solid gray;
+    }
+
+    .main-nav li{
+        padding: 0 2%;
+    }
+
+    .section-header{
+        width: auto;
+        font-weight: bold;
+        padding: 40px 0px;
+        color: rgba(5, 12, 109, 0.822);
+        text-align: center;
+        font-size: 6em;
+}
+
+    .taj-image{ 
+
+        float: none;
+        height: 400px;
+        width:760px;
+        border-radius: 5%;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    figure{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-section{
+        margin: 50px;
+    
+    }
+
+    .container {
+        margin: 0 90px ;                 /*LEFT & RIGTH MARGIN WILL BE AUTO SO CENTER*/
+        margin-top: 100px;
+        margin-bottom: 60px;
+        background-color: rgba(240, 255, 255, 0.904);
+        padding: 5em;
+        border-radius: 2%;
+    }
+
+    .container p{
+        padding: 2em;
+        margin: 0;
+        text-align: center;
+        font-size: 37px;
+    }
+
+    .footer-nav img{
+        width: 120px;
+        height: 120px;
+        padding: 5px;
+        border-radius: 25%;
+        background-color: rgba(255, 255, 255, 0.568);
+        background-blend-mode:overlay ;
+       
+    }
+}
+
+
+@media only screen and (max-width: 200px) and (max-width: 480px) {
+    .main-nav {
+        text-align: center;
+        font-size: 4em;
+        border-bottom:  2px solid gray;
+    }
+
+    .nav a {
+        display: inline-block;          /*SIM TO INLINE BUT HIGHT ADJUSTMENT TOO*/
+        padding: .9em;
+        color: white;
+        text-decoration: none ;         /*REMOVE THE UNDERLINE*/
+    }
+
+    .main-nav li{
+        padding: 0 2.5%;
+    }
+
+    
+
+    .section-header{
+        width: auto;
+        height: auto;
+        font-weight: bold;
+        padding: 40px 0px;
+        color: rgba(5, 12, 109, 0.822);
+        text-align: center;
+        font-size: 15em;
+}
+
+    .taj-image{ 
+
+        float: none;
+        height: 800px;
+        width:1340px;
+        border-radius: 5%;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    figure{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-section{
+        margin: 50px;
+    
+    }
+
+    .container {
+        margin: 0 90px ;                 /*LEFT & RIGTH MARGIN WILL BE AUTO SO CENTER*/
+        margin-top: 100px;
+        margin-bottom: 60px;
+        background-color: rgba(240, 255, 255, 0.904);
+        padding: 5em;
+        border-radius: 2%;
+    }
+
+    .container p{
+        padding: 2em;
+        margin: 0;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .footer-nav img{
+        width: 120px;
+        height: 120px;
+        padding: 5px;
+        border-radius: 25%;
+        background-color: rgba(255, 255, 255, 0.568);
+        background-blend-mode:overlay ;
+       
+    }
+}
